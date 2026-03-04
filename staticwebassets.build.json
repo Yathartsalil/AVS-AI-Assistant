@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "NRFIBMuydAaSfWk63FdihKUGt+hHFoJv/NFSA395CCE=",
+  "Source": "AVS",
+  "BasePath": "_content/AVS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AVS/wwwroot",
+      "Source": "AVS",
+      "ContentRoot": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/",
+      "BasePath": "_content/AVS",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/404.html",
+      "SourceId": "AVS",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/",
+      "BasePath": "_content/AVS",
+      "RelativePath": "404.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/404.html"
+    },
+    {
+      "Identity": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/index.html",
+      "SourceId": "AVS",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/",
+      "BasePath": "_content/AVS",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/404.html",
+      "PackagePath": "staticwebassets/404.html"
+    },
+    {
+      "Id": "/home/yatharth-kelkar/Downloads/AVS/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AVS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.AVS.props",
+      "PackagePath": "build\\AVS.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.AVS.props",
+      "PackagePath": "buildMultiTargeting\\AVS.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.AVS.props",
+      "PackagePath": "buildTransitive\\AVS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

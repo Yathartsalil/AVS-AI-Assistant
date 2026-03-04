@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "r/z/4i8Zxe9M5GiJDa0D/LfGbKwYE9qXjDQoOclWF0n8ShiF6FH2weav4EYtw2qkahKKf6nXM+WAFYzyMy5ccw==",
+  "success": true,
+  "projectFilePath": "/home/yatharth-kelkar/Downloads/AVS/AVS.csproj",
+  "expectedPackageFiles": [
+    "/home/yatharth-kelkar/.nuget/packages/google.apis/1.69.0/google.apis.1.69.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/google.apis.auth/1.69.0/google.apis.auth.1.69.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/google.apis.core/1.69.0/google.apis.core.1.69.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/google.genai/1.2.0/google.genai.1.2.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/microsoft.extensions.ai.abstractions/10.3.0/microsoft.extensions.ai.abstractions.10.3.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/mimetypes/2.5.2/mimetypes.2.5.2.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/ollamasharp/5.4.18/ollamasharp.5.4.18.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/system.codedom/7.0.0/system.codedom.7.0.0.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/system.io.pipelines/10.0.3/system.io.pipelines.10.0.3.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/system.management/7.0.2/system.management.7.0.2.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/system.text.encodings.web/10.0.3/system.text.encodings.web.10.0.3.nupkg.sha512",
+    "/home/yatharth-kelkar/.nuget/packages/system.text.json/10.0.3/system.text.json.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
