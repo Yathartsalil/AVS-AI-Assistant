@@ -258,7 +258,3 @@ Contributions are welcome! Here's how to get started:
 Please make sure your code follows the existing style and that all three modes (Basic, Image, Pro) still work before submitting.
 
 ---
-
-<div align="center">
-  Built with ❤️ by <a href="https://github.com/YatharthCoding">YatharthCoding</a>
-</div>
