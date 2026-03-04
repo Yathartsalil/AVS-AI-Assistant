@@ -3,6 +3,7 @@ WORKDIR /app
 COPY *.csproj .
 RUN dotnet restore
 COPY . .
+RUN rm -rf bin obj
 RUN dotnet publish -c Release -o out /p:GenerateAssemblyInfo=false
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
