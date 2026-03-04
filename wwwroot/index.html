@@ -520,10 +520,49 @@ async function sendPrompt(){
     setProgress(60);
     var res=await fetch('/api/prompt',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:fullPrompt,mode:mode})});
     if(!res.ok)throw new Error('Server error: '+res.status);
-    var data=await res.json();remThink(tid);appAI(data);
-    if(!sessions[aS])sessions[aS]={msgs:[],history:[]};
-    sessions[aS].history.push({role:'User',content:pr+(filesSnap.length?' [+'+filesSnap.length+' file(s)]':'')});
-    sessions[aS].history.push({role:'AVS',content:data.finalAnswer});
+    var data = await res.json();
+remThink(tid);
+
+// 🔹 Intercept VS-1 responses
+if (mode === 'basic') {
+
+  var vs1Message = "Thank you for using this model, at AVS we constantly upgrade, renew and improve our models to align with the fast-paced world. Currently we are doing the same with model VS-1. Please consider using the other models which are used for enhanced and comprehensive answers, meaning they are more advanced than this one. Thank you for your cooperation.";
+
+  appAI({
+    finalAnswer: vs1Message,
+    sources: null,
+    imageBase64: null
+  });
+
+  if(!sessions[aS]) sessions[aS] = {msgs:[], history:[]};
+
+  sessions[aS].history.push({
+    role:'User',
+    content: pr + (filesSnap.length ? ' [+'+filesSnap.length+' file(s)]' : '')
+  });
+
+  sessions[aS].history.push({
+    role:'AVS',
+    content: vs1Message
+  });
+
+} else {
+
+  // 🔹 Normal behavior for other models
+  appAI(data);
+
+  if(!sessions[aS]) sessions[aS]={msgs:[],history:[]};
+
+  sessions[aS].history.push({
+    role:'User',
+    content: pr + (filesSnap.length ? ' [+'+filesSnap.length+' file(s)]' : '')
+  });
+
+  sessions[aS].history.push({
+    role:'AVS',
+    content: data.finalAnswer
+  });
+}
     if(sessions[aS].history.length>40)sessions[aS].history=sessions[aS].history.slice(-40);
     await saveSessionToFS();
     updateUI();
