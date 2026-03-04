@@ -3,11 +3,11 @@ WORKDIR /app
 COPY *.csproj .
 RUN dotnet restore
 COPY . .
-RUN rm -rf bin obj
-RUN dotnet publish -c Release -o out /p:GenerateAssemblyInfo=false
+RUN rm -rf bin obj *.json *.runtimeconfig.* *.deps.*
+RUN dotnet publish -c Release -o /publish /p:GenerateAssemblyInfo=false
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/out .
+COPY --from=build /publish .
 ENV ASPNETCORE_URLS=http://0.0.0.0:$PORT
 CMD ["./AVS"]
