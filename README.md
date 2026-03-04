@@ -6,7 +6,6 @@
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Ollama](https://img.shields.io/badge/Ollama-Local%20AI-black?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **AVS is a full-stack AI chat application that runs three AI models simultaneously — synthesizing their responses into one perfect answer.**
 
@@ -257,12 +256,6 @@ Contributions are welcome! Here's how to get started:
 5. Open a Pull Request
 
 Please make sure your code follows the existing style and that all three modes (Basic, Image, Pro) still work before submitting.
-
----
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
