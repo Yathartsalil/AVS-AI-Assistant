@@ -5,6 +5,7 @@ RUN dotnet restore
 COPY . .
 RUN rm -rf bin obj *.json *.runtimeconfig.* *.deps.*
 RUN dotnet publish -c Release -o /publish /p:GenerateAssemblyInfo=false
+RUN cp -r wwwroot /publish/wwwroot
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
