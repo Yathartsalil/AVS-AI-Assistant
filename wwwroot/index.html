@@ -235,9 +235,9 @@
         </div>
         <div class="input-bottom">
           <select class="model-dropdown" id="modelDropdown" onchange="setMode(this.value)">
-            <option value="basic">VS-1 — Basic</option>
-            <option value="image">VS-G1 — Image(HuggingFace)</option>
             <option value="pro">VS-2 — Pro (Geminin, groq)</option>
+            <option value="image">VS-G1 — Image(HuggingFace)</option>
+            <option value="basic">VS-1 — Basic</option>
           </select>
           <span class="input-hint"><kbd>Shift</kbd>+<kbd>Enter</kbd> new line &nbsp;·&nbsp; <kbd>Enter</kbd> send</span>
         </div>
@@ -526,7 +526,7 @@ remThink(tid);
 // 🔹 Intercept VS-1 responses
 if (mode === 'basic') {
 
-  var vs1Message = "Thank you for using this model, at AVS we constantly upgrade, renew and improve our models to align with the fast-paced world. Currently we are doing the same with model VS-1. Please consider using the other models which are used for enhanced and comprehensive answers, meaning they are more advanced than this one. Thank you for your cooperation.";
+  var vs1Message = "VS-1 is being upgraded. For more advanced and comprehensive responses, please try one of our newer models.";
 
   appAI({
     finalAnswer: vs1Message,
