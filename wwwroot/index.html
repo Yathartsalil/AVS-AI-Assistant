@@ -350,7 +350,7 @@ auth.onAuthStateChanged(async function(user){
     if(user.photoURL){av.innerHTML='<img src="'+user.photoURL+'" alt=""/>';}
     else{av.textContent=(user.displayName||user.email||'?')[0].toUpperCase();}
     await loadSessionsFromFirestore();
-    setMode('basic');
+    setMode('pro');
   }
 });
 
